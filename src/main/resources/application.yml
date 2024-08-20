@@ -1,9 +1,9 @@
- spring:
+spring:
   datasource:
+    url: jdbc:mysql://mysql-db:3306/services_project?allowPublicKeyRetrieval=true&useSSL=false&useTimezone=true&serverTimezone=GMT&characterEncoding=UTF-8
     username: root
-    url: jdbc:mysql://localhost:3306/services_project?allowPublicKeyRetrieval=true&useSSL=false&useTimezone=true&serverTimezone=GMT&characterEncoding=UTF-8
-    driverClassName: com.mysql.cj.jdbc.Driver
     password: root
+    driverClassName: com.mysql.cj.jdbc.Driver
   jpa:
     hibernate:
       ddl-auto: update
@@ -30,11 +30,9 @@
     oauth2:
       client:
         registration:
-         google:
-          clientId: 590418585274-918265bn0c4breudkmhnsa0duv7rh5cu.apps.googleusercontent.com
-          clientSecret: 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
-          scope:
-           - email
-           - profile
-                    
-         
+          google:
+            clientId: 590418585274-918265bn0c4breudkmhnsa0duv7rh5cu.apps.googleusercontent.com
+            clientSecret: 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
+            scope:
+              - email
+              - profile
